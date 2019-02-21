@@ -1,0 +1,23 @@
+a {
+    color: #000;
+    text-decoration: none; 
+}
+h1 {
+    font-family: 'Josefin Slab', serif;
+}
+
+  div {
+    box-sizing: border-box;
+	padding: 20px;
+	border: 5px solid;
+}
+.left {
+    border-color: #e74c3c;
+    float: left;
+    width: 300px;
+    height: 100vh;
+}
+.right {
+    border-color: #2ecc71;
+    margin-left: 300px;
+}
