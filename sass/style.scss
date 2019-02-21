@@ -13,25 +13,26 @@
 /* Pages / Views */
 /*@import "pages/registration";*/
 
-
 * {
     box-sizing: border-box;    
 }
 
-
-
 a {
     text-decoration: none;
-    color: #000;
+    color: $kodfont-third;
+}
+
+i {
+    padding: 7px;
 }
 
 body {
     margin: 0 auto;
-    background-color: #fff;
-    font-family: 'Lato', sans-serif;
+    background-color: $kodfont-four;
+    font-family: $paragraph-font;
 }
 h1 {
-    font-family: 'Josefin Slab', serif;
+    font-family: $h1-font;
 }
 
 div {
@@ -43,18 +44,13 @@ div {
     float: left;
     width: 300px;
     height: 100vh;
-    background-color: #191919;
+    background-color: $nav-background;
     color: #efe8e8;
 }
 .right {
     border-color: #2ecc71;
     margin-left: 300px;
-    background-color: #000;
-}
-
-nav > ul > li {
-    display: inline-block;
-    padding: 7px;
+    background-color: $kodfont-second;
 }
 
 nav {
@@ -69,11 +65,34 @@ nav > ul {
     margin: 0;
 }
 
-.nav-side a {
-    color: #efe8e8;
+nav > ul > li {
+    display: inline-block;
+    padding: 7px;
 }
 
-i {
- padding: 10px;
+.navside_bar {
+    margin-left: 0;
+    padding: 0;
+    text-align: left;
+    color: $kodfont-second;
 }
+
+.navside_bar ul {
+    list-style-type: none;
+    font-size: 18px;
+    
+}
+
+.navside_bar li {
+    padding: 15px;
+}
+
+.navside_bar > ul > li > a {
+    color: $kodfont-four;
+}
+
+.span_1 {
+    margin-left: 20%;
+}
+
 

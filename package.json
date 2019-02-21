@@ -15,8 +15,8 @@
     "build:sass": "node-sass --output-style compact -o css sass",
     "build:autoprefixer": "autoprefixer-cli css/style.css",
     "watch": "npm-run-all build -p watch:*",
-    "watch:sassprefixer": "onchange -d 100 sass/style.scss --- node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli -o css/style.css"
-  },                       
+    "watch:sassprefixer": "onchange -d 100 sass/style.scss -- node-sass --output-style expanded --source-map true -o css sass && autoprefixer-cli -o css/style.css"
+  }, 
   "keywords": [],
   "author": "",
   "license": "ISC",
