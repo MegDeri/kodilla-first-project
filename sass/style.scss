@@ -17,82 +17,78 @@
     box-sizing: border-box;    
 }
 
-a {
-    text-decoration: none;
-    color: $kodfont-third;
-}
-
-i {
-    padding: 7px;
-}
-
 body {
     margin: 0 auto;
     background-color: $kodfont-four;
     font-family: $paragraph-font;
 }
-h1 {
-    font-family: $h1-font;
-}
 
-div {
-   padding: 20px;
-	border: 5px solid;
-}
-.left {
-    border-color: #e74c3c;
-    float: left;
-    width: 300px;
-    height: 100vh;
-    background-color: $nav-background;
-    color: #efe8e8;
-}
-.right {
-    border-color: #2ecc71;
-    margin-left: 300px;
+.navbar{
     background-color: $kodfont-second;
+    overflow: hidden;
+    height: 63px;
 }
 
-nav {
-    margin: 0 auto;
-    text-align: right;
-    font-size: 26px;
-   
+.navbar a{
+    float: right;
+    display: block;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
 }
 
-nav > ul {
-    padding: 0;
-    margin: 0;
-}
-
-nav > ul > li {
-    display: inline-block;
-    padding: 7px;
-}
-
-.navside_bar {
-    margin-left: 0;
-    padding: 0;
-    text-align: left;
-    color: $kodfont-second;
-}
-
-.navside_bar ul {
+.navbar ul {
+    padding: 8px 0 0 0;
     list-style-type: none;
-    font-size: 18px;
-    
 }
 
-.navside_bar li {
-    padding: 15px;
+.navbar a:hover {
+    background-color: $kodfont-five;
+    color: $nav-background;
 }
 
-.navside_bar > ul > li > a {
+.side-nav {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: $nav-background;
+    opacity: 0.9;
+    overflow-x: hidden;
+    padding-top: 60px;
+    transition: 0.5s;
+}
+
+.side-nav a{
+    padding: 10px 10px 10px 30px;
+    text-decoration: none;
+    font-size: 22px;
     color: $kodfont-four;
+    display: block;
+    transition: 0.3s;
 }
 
-.span_1 {
-    margin-left: 20%;
+.side-nav a:hover {
+    color: $kodfont-second;
+    background-color: $kodfont-third;
+}
+
+.side-nav .btn-close {
+    position: sbdolute;
+    top: 0;
+    right: 22px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.main {
+transition: margin-left 0.5s;
+padding: 20px;
+overflow: hidden;
+width: 100%;
 }
 
 

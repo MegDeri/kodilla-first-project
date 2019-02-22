@@ -4,39 +4,43 @@
     <title>First project</title>
     <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Layout</title>
+        <title>Responsive first project</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Lato|Montserrat+Alternates:400,700&amp;subset=latin-ext" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
-    <div class="left">
-        <h1>Just do it!
-            <span class="span_1">
-            <a href="#"><i class="fas fa-bars"></i></a>    
-            </span>
-        </h1>
-        <div class="navside_bar">
-            <ul>
-                <li><i class="far fa-star"></i><a href="#">General</a></li>
-                <li><i class="fas fa-chart-bar"></i><a href="#">Details</a>
-                <li><i class="fas fa-link"></i><a href="#">Links</a></li>
-                <li><i class="fas fa-align-left"></i><a href="#">Banners</a></li>
-                <li><i class="fas fa-user"></i><a href="#">Personal data</a></li>
-                <li><i class="fas fa-hryvnia"></i><a href="#">Payout</a></li>
-                <li><i class="fas fa-undo"></i><a href="#">Postback</a></li>
-            </ul>
-        </div>
+    <nav class="navbar">
+        <span class="open-slide">
+            <a href="#" onclick="openSlideMenu()">
+               <svg width="30" height="30">
+                   <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                   <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                   <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+               </svg>
+            </a>    
+        </span>
+        <ul class="navbar-nav">
+            <li><a href="#"><i class="fas fa-wallet"></i>€ 1.500.00</a>|</li>
+            <li><a href="#"><i class="far fa-bell"></i></a></li>
+            <li><a href="#"><i class="far fa-user-circle"></i>John Smith</a></li>
+            <li><a href="#"><i class="far fa-hand-point-right"></i></a></li>
+        </ul>
+    </nav>
+    <div id="side-menu" onclick="closeSlideMenu()" class="side-nav">
+        <h1>Just do it!</h1>
+        <a href="#" class="btn-close">&times;</a>
+        <a href="#"><i class="far fa-star"></i>General</a>
+        <a href="#"><i class="fas fa-chart-bar"></i>Details</a>
+        <a href="#"><i class="fas fa-link"></i>Links</a>
+        <a href="#"><i class="fas fa-align-left"></i>Banners</a>
+        <a href="#"><i class="fas fa-user"></i>Personal data</a>
+        <a href="#"><i class="fas fa-hryvnia"></i>Payout</a>
+        <a href="#"><i class="fas fa-undo"></i>Postback</a>
     </div>
-    <div class="right">
-        <nav>
-            <ul>
-                <li>|<a href="#"><glyph unicode="&#x0062;" d="M1018.093,535.814C1018.093,535.814,899.023,535.814,899.023,535.814C899.023,535.814,899.023,625.116,899.023,625.116C899.023,708.465,833.535,773.953,750.186,773.953C750.186,773.953,297.721,773.953,297.721,773.953C297.721,773.953,720.419,940.651,720.419,940.651C720.419,940.651,720.419,833.488,720.419,833.488C720.419,833.488,779.953,833.488,779.953,833.488C779.953,833.488,779.953,1024,779.953,1024C779.953,1024,131.023,773.953,131.023,773.953C59.581,762.047,6,696.558,6,625.116C6,625.116,6,148.837,6,148.837C6,65.488,71.488,0,154.837,0C154.837,0,750.186,0,750.186,0C833.535,0,899.023,65.488,899.023,148.837C899.023,148.837,899.023,238.14,899.023,238.14C899.023,238.14,1018.093,238.14,1018.093,238.14C1018.093,238.14,1018.093,535.814,1018.093,535.814C1018.093,535.814,1018.093,535.814,1018.093,535.814M839.488,148.837C839.488,101.209,797.814,59.535,750.186,59.535C750.186,59.535,154.837,59.535,154.837,59.535C107.209,59.535,65.535,101.209,65.535,148.837C65.535,148.837,65.535,625.116,65.535,625.116C65.535,672.744,107.209,714.419,154.837,714.419C154.837,714.419,750.186,714.419,750.186,714.419C797.814,714.419,839.488,672.744,839.488,625.116C839.488,625.116,839.488,535.814,839.488,535.814C839.488,535.814,512.047,535.814,512.047,535.814C428.698,535.814,363.209,470.326,363.209,386.977C363.209,303.628,428.698,238.14,512.047,238.14C512.047,238.14,839.488,238.14,839.488,238.14C839.488,238.14,839.488,148.837,839.488,148.837C839.488,148.837,839.488,148.837,839.488,148.837M958.558,297.674C958.558,297.674,512.047,297.674,512.047,297.674C464.419,297.674,422.744,339.349,422.744,386.977C422.744,434.605,464.419,476.279,512.047,476.279C512.047,476.279,958.558,476.279,958.558,476.279C958.558,476.279,958.558,297.674,958.558,297.674C958.558,297.674,958.558,297.674,958.558,297.674" class="icon-wallet"/>€ 1.500.00</a>|</li>
-                <li>|<a href="#"><i class="far fa-bell"></i></a>|</li>
-                <li>|<a href="#"><i class="far fa-user-circle"></i>John Smith</a>|</li>
-                <li>|<a href="#"><i class="far fa-hand-point-right"></i></a>|</li>
-            </ul>
-        </nav>
+    <div id="main" class="main">
+        <h1>Rsponsive menu</h1>
     </div>
+    <script script src="js/script.js" charset="UTF-8"></script>
 </body>
 </html>
