@@ -11,3 +11,25 @@
     -ms-column-count: $count;
     column-count: $count;
   }
+
+  @media(max-width: 668px){
+    .navbar {
+     height: auto;
+   }
+   .navbar ul {
+     padding: 0;
+   }
+   .navbar ul li {
+     display: block;
+     text-align: center;
+     padding: 0;
+   }
+  .navbar a {
+   text-align: center;
+   text-decoration: none;
+   font-size: 25px;
+   color: #000;
+   float: none;
+   width: 100%;
+  }
+ }
