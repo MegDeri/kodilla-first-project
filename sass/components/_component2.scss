@@ -1,0 +1,43 @@
+/*Button's style*/
+[class*="btn-"]{
+    width: 80px;
+    height: 40px;
+    border-radius: 10%;
+    border: none;
+    background-color: #fc9105;
+    color: #fff;
+    cursor: pointer;
+    text-shadow: 0.7px 0.7px #6f7070;
+    padding: 10px;
+    margin-left: 10px;
+    }
+    
+    .btn-lg {
+    width: 100px;
+    height: 50px;
+    font-size: 18px;
+    }
+    
+    .btn-sm {
+    width: 70px;
+    height: 30px;
+    font-size: 12px;
+    }
+    
+    .btn-gray {
+    background-color: #726e69;
+    text-shadow: 0.7px 0.7px #c4a57d;
+    }
+    
+    [class*="undo-"] {
+    text-shadow: 0.7px 0.7px #c4a57d;
+    width: 50px;
+    }
+    
+    .undo-1 {
+    width: 35px
+    }
+    
+    .undo-2 {
+    width:45px 
+    }
