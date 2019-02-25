@@ -1,0 +1,191 @@
+/*Grid*/
+.col-1 {width: 8.33%;}
+.col-2 {width: 16.66%;}
+.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}
+.col-5 {width: 41.66%;}
+.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}
+.col-8 {width: 66.66%;}
+.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}
+.col-11 {width: 91.66%;}
+.col-12 {width: 100%;}
+
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear: both;
+}
+
+[class*="col-"] {
+  padding: 12px;
+  float:left;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/*Text and headers style*/
+h1, h2, h3, h4, h5, h6 {
+padding: 0;
+margin: 0;
+}
+
+h1 {
+font-family: Lato, sans-serif;
+color: #565550;
+}
+
+h2, h3 {
+font-family: 'PT Serif', serif ;
+color: #757471;
+}
+h4 {
+font-family: 'Open sans', sans-serif;
+color: #9e975a;
+}
+
+h5, h6 {
+font-family: 'Arial', sans-serif;
+}
+
+p {
+font-family: 'Arial', sans-serif; 
+}
+
+a {
+text-decoration: none;
+color: #000;
+font-family: 'Arial', sans-serif;
+}
+
+/*Unordered and ordered list*/
+ul, ol, li {
+ font-family: 'Arial', sans-serif; 
+}
+
+/*Line with digit*/
+table {
+font-family: arial, sans-serif;
+border-collapse: collapse;
+border-bottom: 2px solid #878080;
+margin-left: 5%;
+}
+
+.number {
+text-align: right;
+}
+
+/*Table with links*/
+.table2 {
+border-top: 2px solid #878080;
+margin-left: 0;
+}
+
+tr {
+border-bottom: 2px solid #878080;
+}
+
+table > tbody > tr > td {
+padding:1em;
+}
+
+/*Button's style*/
+[class*="btn-"]{
+width: 80px;
+height: 40px;
+border-radius: 10%;
+border: none;
+background-color: #fc9105;
+color: #fff;
+cursor: pointer;
+text-shadow: 0.7px 0.7px #6f7070;
+}
+
+.btn-lg {
+width: 100px;
+height: 50px;
+font-size: 18px;
+}
+
+.btn-sm {
+width: 70px;
+height: 30px;
+font-size: 12px;
+}
+
+.btn-gray {
+background-color: #726e69;
+text-shadow: 0.7px 0.7px #c4a57d;
+}
+
+[class*="undo-"] {
+text-shadow: 0.7px 0.7px #c4a57d;
+width: 50px;
+}
+
+.undo-1 {
+width: 35px
+}
+
+.undo-2 {
+width:45px 
+}
+
+/*list legend*/
+.legend {
+position: relative;
+padding: 0;
+margin: 0;
+list-style-type: none;
+}
+
+.legend li {
+display: inline-block;
+padding: 0 25px;
+font-size: 17px;
+background-color: #ccc;
+height: 30px;
+line-height: 30px;
+text-align: center;
+border-radius: 7%;
+}
+
+[class*="sp-"] {
+display: block;
+height: 10px;
+width: 10px;
+background-color: #0442f9;
+border-radius: 50%;
+position: absolute;
+top: 10px;
+left: 6px;
+}
+
+.sp-orange {
+left: 122px;
+background-color: #fc9105;
+}
+
+.sp-green {
+left: 210px;
+background-color: #30ad14;
+}
+
+/*Calendar input style*/
+input:required {
+ border-color: rgba(255, 99 ,71, 0.6);
+ outline-color: rgb(63, 122, 51);     
+}
+
+.calendar {
+text-align: center;
+}
+
+.date-calendar {
+width: 180px;
+height: 30px;
+}
