@@ -1,0 +1,60 @@
+/*Text and headers style*/
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+    }
+    
+    h1 {
+    font-family: $h1-font;
+    color: $h1-color;
+    }
+    
+    h2, h3 {
+    font-family: $brand-font;
+    color: $h2h3-color;
+    }
+    h4 {
+    font-family: $brand-font;
+    color: $h4-color;
+    }
+    
+    h5, h6 {
+    font-family: $paragraph-font;
+    }
+    
+    p {
+    font-family: $paragraph-font; 
+    }
+    
+    a {
+    text-decoration: none;
+    color: $paragraph-color;
+    font-family: $paragraph-font; 
+    }
+
+
+/*Line with digit*/
+table {
+font-family: $paragraph-font;
+border-collapse: collapse;
+border-bottom: 2px solid $table-color;
+}
+
+.number {
+text-align: right;
+}
+
+/*Table with links*/
+.table2 {
+border-top: 2px solid $table-color;
+margin-left: 0;
+}
+
+tr {
+border-bottom: 2px solid $table-color;
+text-align: justify;
+}
+
+table > tbody > tr > td {
+padding: 1em;
+}

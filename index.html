@@ -6,7 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Responsive first project</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Josefin+Slab:400,700|Lato|Montserrat+Alternates:400,700&amp;subset=latin-ext" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Damion|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
@@ -29,7 +29,7 @@
     </nav>
     <div id="side-menu" onclick="closeSlideMenu()" class="side-nav">
         <h1>Just do it!</h1>
-        <a href="#" class="btn-close">&times;</a>
+        <a href="#" class="b-close">&times;</a>
         <a href="#"><i class="far fa-star"></i> General</a>
         <a href="#"><i class="fas fa-chart-bar"></i> Details</a>
         <a href="#"><i class="fas fa-link"></i> Links</a>
@@ -39,7 +39,77 @@
         <a href="#"><i class="fas fa-undo"></i> Postback</a>
     </div>
     <div id="main" class="main">
-        <h1>Responsive menu</h1>
+        <br><br><br>
+        <section class="main-section">
+            <h3 class="title">General statistic</h3>
+            <div class="container">    
+                <div class="row  calendar">
+                    <div class="col-12">
+                        <form>
+                            <div class="input-calendar">
+                            <input type="date" class="date-calendar" id="calendar" required>
+                            <input type="date" class="date-calendar" id="calendar" required>
+                        
+                    </div> 
+                    <button class="btn-sm undo-1"><i class="fas fa-undo"></i></button>
+                    </form>
+                    </div>
+                </div>
+            </div>
+        <div class="border"></div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-3 col-offset-3 digit">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><h4>Visit signsup</h4></td>
+                                    <td class="number">445</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>FTD</h4></td>
+                                    <td class="number">124</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div class="col-3 digit">
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><h4>Net deposit</h4></td>
+                                    <td class="number">653</td>
+                                </tr>
+                                <tr>
+                                    <td><h4>Turn over</h4></td>
+                                    <td class="number">13</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="row">
+                <h5 class="header5">Earning chart</h5>
+                    <div class="col-6 col-offset-3">
+                        <ul class="legend">
+                            <li><span class="sp-blue"></span>Signups</li>
+                            <li><span class="sp-orange"></span>FTD</li>
+                            <li><span class="sp-green"></span>Earned</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-12">
+                        <img class="chart" src="images/chart.png" alt="phone">
+                    </div>
+                </div>
+            </div>  
+        </section><br>
+        <section class="main-section">
+            <h3 class="title">Links</h3>
+          <div class="container">    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non maximus purus. Nam nisl nunc, rhoncus ac pellentesque in, porttitor eu libero. Morbi eget sagittis mauris, a hendrerit eros. Quisque rutrum leo ac enim dapibus molestie. Integer at purus quam. Sed at placerat arcu, sit amet convallis purus. Sed eleifend sapien a molestie varius.</p>
+            </div>
+          </section>
     </div>
     <script script src="js/script.js" charset="UTF-8"></script>
 </body>

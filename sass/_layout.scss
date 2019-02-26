@@ -1,18 +1,20 @@
+$grid-columns: 12;
+
 @for $i from 1 through 12 {
     .col-#{$i} {
-      width: (8.33333333333 * $i);
+      width: (100% / $grid-columns) * $i;
     }
   }
   
   @for $i from 0 through 11 {
     .col-offset-#{$i} {
-      width: (8.33333333333 * $i);
+      margin-left: (100% / $grid-columns) * $i;
     }
   }
 
   // Media query
 
-@media (max-width: 767px){
+@media (max-width: 667px){
     // For tablets: 
   .col-s-1 {width: 8.33%;}
   .col-s-2 {width: 16.66%;}
@@ -27,7 +29,7 @@
   .col-s-11 {width: 91.66%;}
   .col-s-12 {width: 100%;}
 } 
-  @media (min-width: 768px) {
+  @media (min-width: 668px) {
     // For desktop: 
   .col-m-1 {width: 8.33%;}
   .col-m-2 {width: 16.66%;}
@@ -41,4 +43,28 @@
   .col-m-10 {width: 83.33%;}
   .col-m-11 {width: 91.66%;}
   .col-m-12 {width: 100%;}
+}
+
+/*Media query*/
+@media(max-width: 667px){
+  .navbar {
+   height: auto;
+   position: static;
+ }
+ .navbar ul {
+   padding: 0;
+ }
+ .navbar ul li {
+   display: block;
+   text-align: center;
+   padding: 0;
+ }
+.navbar a {
+ text-align: center;
+ text-decoration: none;
+ font-size: 25px;
+ color: $kodfont-third;
+ float: none;
+ width: 100%;
+}
 }

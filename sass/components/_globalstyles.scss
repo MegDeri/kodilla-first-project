@@ -1,0 +1,27 @@
+//Global styles
+
+.row:before,
+.row:after {
+  content:"";
+  display: table ;
+  clear: both;
+}
+
+[class*="col-"] {
+  padding: 12px;
+  float:left;
+}
+
+.row {
+    margin: 3% 0;
+}
+
+* {
+    box-sizing: border-box;    
+}
+
+body {
+    margin: 0 auto;
+    background-color: $kodfont-four;
+    font-family: $paragraph-font;
+}

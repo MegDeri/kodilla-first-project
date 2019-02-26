@@ -10,7 +10,7 @@ list-style-type: none;
 display: inline-block;
 padding: 0 25px;
 font-size: 17px;
-background-color: #ccc;
+background-color: $kodfont-four;
 height: 30px;
 line-height: 30px;
 text-align: center;
@@ -21,8 +21,8 @@ border-radius: 7%;
 display: block;
 height: 10px;
 width: 10px;
-background-color: #0442f9;
-border-radius: 50%;
+background-color: $span-blue;
+@include border-radius(50%);
 position: absolute;
 top: 28%;
 left: 22%;
@@ -30,22 +30,22 @@ left: 22%;
 
 .sp-orange {
 left: 44%;
-background-color: #fc9105;
+background-color: $span-orange;
 }
 
 .sp-green {
 left: 61%;
-background-color: #30ad14;
+background-color: $span-green;
 }
 
 /*Unordered and ordered list*/
 ul, ol, li {
- font-family: 'Arial', sans-serif; 
+ font-family: $paragraph-font;
 }
 
 .header5 {
-    padding: 15px;
-    margin: 15px;
-    margin-left: 20%;
-    text-align: left;
+padding: 15px;
+margin: 15px;
+margin-left: 20%;
+text-align: left;
 }
