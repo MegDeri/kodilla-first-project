@@ -1,51 +1,52 @@
 /*list legend*/
 .legend {
-position: relative;
-padding: 0;
-margin: 0;
-list-style-type: none;
-}
-
-.legend li {
-display: inline-block;
-padding: 0 25px;
-font-size: 17px;
-background-color: $kodfont-four;
-height: 30px;
-line-height: 30px;
-text-align: center;
-border-radius: 7%;
-}
-
-[class*="sp-"] {
-display: block;
-height: 10px;
-width: 10px;
-background-color: $span-blue;
-@include border-radius(50%);
-position: absolute;
-top: 28%;
-left: 22%;
-}
-
-.sp-orange {
-left: 44%;
-background-color: $span-orange;
-}
-
-.sp-green {
-left: 61%;
-background-color: $span-green;
-}
-
-/*Unordered and ordered list*/
-ul, ol, li {
- font-family: $paragraph-font;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+        li {
+            display: inline-block;
+            padding: 0 25px;
+            margin: 0 5px;
+            font-size: 15px;
+            background-color: $legend-color;
+            height: 35px;
+            line-height: 35px;
+            text-align: center;
+            color: $title-section;
+            @include border-radius(7%);
+        }
+        li.firstch {
+            i {
+              font-size: 14px;
+              padding-right: 3px;
+              color: $kodfont-color;
+            }
+        }
+        li.midch {
+            i {
+              font-size: 14px;
+              padding-right: 3px;
+              color: $span-orange;
+            }
+        }
+        li.lastch {
+            background-color: $kodfont-second;
+            color: $kodfont-color;
+            i {
+              font-size: 14px;
+              padding-right: 3px;
+              color: $span-green;
+            }
+        }
 }
 
 .header5 {
-padding: 15px;
-margin: 15px;
-margin-left: 20%;
+padding: 15px 0;
+margin: 15px 0;
 text-align: left;
+color: $title-section;
+font-family: $brand-font;
 }
+
+
+

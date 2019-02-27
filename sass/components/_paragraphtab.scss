@@ -1,4 +1,4 @@
-/*Text and headers style*/
+//Text and headers style
 h1, h2, h3, h4, h5, h6 {
     padding: 0;
     margin: 0;
@@ -33,28 +33,72 @@ h1, h2, h3, h4, h5, h6 {
     }
 
 
-/*Line with digit*/
-table {
-font-family: $paragraph-font;
-border-collapse: collapse;
-border-bottom: 2px solid $table-color;
+//Line with digit
+.digit {
+    display: flex;
+    justify-content: space-between;  
+    }
+    
+.line {
+    border-bottom: 0.5px solid $h1-color;
+    width: 250px;
+    display: flex;
+    justify-content: space-between;
+    font-family: $brand-font;
+    color: $h2h3-color;
+    padding: 5px 0;
 }
 
-.number {
-text-align: right;
+span.linesp {
+    color: $kodfont-third;
 }
 
-/*Table with links*/
-.table2 {
-border-top: 2px solid $table-color;
-margin-left: 0;
+.line_dig {
+    margin: 1% 0 0 0;
+}
+//Line with links
+
+.link_div {
+    display: flex;
+    justify-content: space-between;  
+    border-bottom: 0.5px solid $h1-color; 
+    align-items: center;
+    font-family: $brand-font;
+    color: $h2h3-color;
+    padding: 20px 0;
+}
+.link_div:hover {
+    background-color: $legend-color;
 }
 
-tr {
-border-bottom: 2px solid $table-color;
-text-align: justify;
+.content_link {
+    justify-content: space-between; 
+    width: 120px;
+    a {
+        color: $kodfont-color; 
+        font-family: $brand-font; 
+    }
+    i {
+        font-size: 14px;
+        padding-right: 15px;
+    }
+    i.icon-links {
+        color: $span-orange;
+    }
 }
 
-table > tbody > tr > td {
-padding: 1em;
+.name-one {
+    text-align: left;
+}
+
+.top-border {
+    border-top: 0.5px solid $h1-color; 
+}
+
+.button {
+    padding-bottom: 20px;
+}
+
+.button-second {
+    padding-top: 40px; 
 }

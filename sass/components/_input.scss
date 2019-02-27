@@ -24,6 +24,12 @@ input {
    
 .date-calendar {
    width: 150px;
-   border-left: 0.5px solid $kodfont-four;
    padding: 2px 5px;
+}
+
+.cal-right {
+    border-left: 0.5px solid $kodfont-four;
+}
+i.icon-calendar {
+    margin-right: 10px;
 }

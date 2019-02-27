@@ -1,0 +1,23 @@
+/*Media query*/
+@media(max-width: 667px){
+    .navbar {
+     height: auto;
+     position: static;
+   }
+   .navbar ul {
+     padding: 0;
+   }
+   .navbar ul li {
+     display: block;
+     text-align: center;
+     padding: 0;
+   }
+  .navbar a {
+   text-align: center;
+   text-decoration: none;
+   font-size: 25px;
+   color: $kodfont-third;
+   float: none;
+   width: 100%;
+  }
+  }

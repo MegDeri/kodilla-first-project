@@ -12,21 +12,36 @@
         }
         li {
             display: inline-block;
-            padding: 0 18px;
         }
         a {
             text-align: center;
             text-decoration: none;
             font-size: 20px;
-            color: $kodfont-third;
+            color: $h1-color;
             float: left;
             display: block;
-            &a:hover {
-            background-color: $kodfont-five;
-            color: $nav-background;
-            }
+            border-left: 0.9px solid $h1-color;
+            padding: 2px 12px 0 12px;
         }
-}   
+        i {
+            font-size: 16px;
+            padding: 6px;
+        }
+}
+
+.wallet {
+    color: $nav-background;  
+}
+
+.span-name {
+    color: $kodfont-color;
+    font-size: 15px;
+}
+
+.navbar a:hover {
+    background-color: $kodfont-five;
+    color: $nav-background;
+}
 
 //Side bar
 .side-nav {
@@ -36,29 +51,34 @@
         z-index: 1;
         top: 0;
         left: 0;
-        background-color: $nav-background;
+        background-color: $kodfont-third;
         opacity: 0.9;
         overflow-x: hidden;
-        padding-top: 60px;
+        padding-top: 20px;
         transition: 0.5s;
         h1 {
             color: $kodfont-second;
             font-family: $h1-font;
-            text-align: center;
+            text-align: left;
+            font-size: 42px;
+            padding-bottom: 10px;
         }
         a {
-            padding: 10px 10px 10px 30px;
+            padding: 20px 20px 20px 2px;
             text-decoration: none;
-            font-size: 22px;
+            font-size: 18px;
             color: $kodfont-four;
             display: block;
             transition: 0.3s;
-            &a:hover {
-               color: $kodfont-second;
-               background-color: $kodfont-third;
-            }
-        
         }
+        i {
+            padding-right: 6px;
+        }
+}
+
+.side-nav a:hover {
+    color: $kodfont-second;
+    background-color: $nav-background;
 }
 
 .side-nav .b-close {
