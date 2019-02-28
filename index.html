@@ -8,6 +8,7 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Damion|Open+Sans" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" type="text/css" href="icon-font/css/Glyphter.css">
 </head>
 <body>
     <nav class="navbar">
@@ -21,22 +22,22 @@
             </a>    
         </span>
         <ul class="navbar-nav">
-            <li><a href="#"><i class="fas fa-wallet"></i> € 1.500.00</a></li>
-            <li><a href="#"><i class="far fa-bell"></i></a></li>
-            <li><a href="#"><i class="far fa-user-circle"></i> John Smith</a></li>
-            <li><a href="#"><i class="far fa-hand-point-right"></i></a></li>
+            <li><a href="#"><i class="icon-wallet"></i> <span class="wallet"> € 1,500.00</span></a></li>
+            <li><a href="#"><i class="icon-notification"></i></a></li>
+            <li><a href="#"><i class="icon-profile"></i> <span class="span-name">John Smith</span></a></li>
+            <li><a href="#"><i class="icon-quit"></i></a></li>
         </ul>
     </nav>
     <div id="side-menu" onclick="closeSlideMenu()" class="side-nav">
         <h1>Just do it!</h1>
         <a href="#" class="b-close">&times;</a>
-        <a href="#"><i class="far fa-star"></i> General</a>
-        <a href="#"><i class="fas fa-chart-bar"></i> Details</a>
-        <a href="#"><i class="fas fa-link"></i> Links</a>
-        <a href="#"><i class="fas fa-align-left"></i> Banners</a>
-        <a href="#"><i class="fas fa-user"></i> Personal data</a>
-        <a href="#"><i class="fas fa-hryvnia"></i> Payout</a>
-        <a href="#"><i class="fas fa-undo"></i> Postback</a>
+        <a href="#"><i class="icon-general"></i> General</a>
+        <a href="#"><i class="icon-details"></i> Details</a>
+        <a href="#"><i class="icon-links"></i> Links</a>
+        <a href="#"><i class="icon-banners"></i> Banners</a>
+        <a href="#"><i class="icon-personaldata"></i> Personal data</a>
+        <a href="#"><i class="icon-payout"></i> Payout</a>
+        <a href="#"><i class="icon-postback"></i> Postback</a>
     </div>
     <div id="main" class="main">
         <br><br><br>
@@ -47,54 +48,40 @@
                     <div class="col-12">
                         <form>
                             <div class="input-calendar">
-                            <input type="date" class="date-calendar" id="calendar" required>
-                            <input type="date" class="date-calendar" id="calendar" required>
-                        
-                    </div> 
-                    <button class="btn-sm undo-1"><i class="fas fa-undo"></i></button>
-                    </form>
+                                <input type="date" class="date-calendar" id="calendar" required>
+                                <input type="date" class="date-calendar cal-right" id="calendar" required>
+                                <i class="icon-calendar"></i>
+                            </div> 
+                            <button class="btn-sm undo-1"><i class="fas fa-undo"></i></button>
+                        </form>
                     </div>
                 </div>
             </div>
-        <div class="border"></div>
+            <hr>
             <div class="container">
-                <div class="row">
-                    <div class="col-3 col-offset-3 digit">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><h4>Visit signsup</h4></td>
-                                    <td class="number">445</td>
-                                </tr>
-                                <tr>
-                                    <td><h4>FTD</h4></td>
-                                    <td class="number">124</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                <div class="row line_dig">
+                    <div class="col-8 col-offset-2">
+                        <div class="digit">
+                            <div class="line">Visit signsup <span class="linesp">124</span></div> 
+                            <div class="line">Net deposit <span class="linesp">564</span></div>
+                         </div>
                     </div>
-                    <div class="col-3 digit">
-                        <table>
-                            <tbody>
-                                <tr>
-                                    <td><h4>Net deposit</h4></td>
-                                    <td class="number">653</td>
-                                </tr>
-                                <tr>
-                                    <td><h4>Turn over</h4></td>
-                                    <td class="number">13</td>
-                                </tr>
-                            </tbody>
-                        </table>
+                </div>
+                <div class="row line_dig">
+                    <div class="col-8 col-offset-2">
+                        <div class="digit">
+                            <div class="line">FTD <span class="linesp">445</span></div> 
+                            <div class="line">Turn over <span class="linesp">432</span></div>
+                         </div>
                     </div>
                 </div>
                 <div class="row">
-                <h5 class="header5">Earning chart</h5>
-                    <div class="col-6 col-offset-3">
+                    <div class="col-8 col-offset-2">
+                        <h5 class="header5">Earning chart</h5>
                         <ul class="legend">
-                            <li><span class="sp-blue"></span>Signups</li>
-                            <li><span class="sp-orange"></span>FTD</li>
-                            <li><span class="sp-green"></span>Earned</li>
+                            <li class="firstch"><i class="fas fa-circle"></i>Signups</li>
+                            <li class="midch"><i class="fas fa-circle"></i>FTD</li>
+                            <li class="lastch"><i class="fas fa-circle"></i>Earned</li>
                         </ul>
                     </div>
                 </div>
@@ -107,7 +94,63 @@
         </section><br>
         <section class="main-section">
             <h3 class="title">Links</h3>
-          <div class="container">    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis non maximus purus. Nam nisl nunc, rhoncus ac pellentesque in, porttitor eu libero. Morbi eget sagittis mauris, a hendrerit eros. Quisque rutrum leo ac enim dapibus molestie. Integer at purus quam. Sed at placerat arcu, sit amet convallis purus. Sed eleifend sapien a molestie varius.</p>
+            <div class="container">
+                <div class="row">
+                    <div class="button"><button class="btn-lg"> + Add new</button> </div>
+                    <div class="col-8 col-offset-2">
+                        <div class="link_div top-border">
+                            <div class="content_link name-one">Home page</div>
+                            <div class="content_link"><a href="#">www.homepage.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div> 
+                        <div class="link_div">
+                            <div class="content_link name-one">Currently offer</div>
+                            <div class="content_link"><a href="#">www.currentlyoffer.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Blur pix</div>
+                            <div class="content_link"><a href="#">www.blurpix.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Your site</div>
+                            <div class="content_link"><a href="#">www.homepage.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Google</div>
+                            <div class="content_link"><a href="#">www.google.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Facebook</div>
+                            <div class="content_link"><a href="#">www.facebook.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Dashboard</div>
+                            <div class="content_link"><a href="#">www.dashboard.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Blurax</div>
+                            <div class="content_link"><a href="#">www.blurax.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Piece of wine</div>
+                            <div class="content_link"><a href="#">www.pieceofwine.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="link_div">
+                            <div class="content_link name-one">Twitter</div>
+                            <div class="content_link"><a href="#">www.twitter.com</a></div>
+                            <div class="content_link"><i class="icon-links"></i><i class="icon-trash"></i></div>
+                        </div>
+                        <div class="button-second"><button class="btn-lg"> + Add new</button> </div>                      
+                    </div>
+                </div>
             </div>
           </section>
     </div>
