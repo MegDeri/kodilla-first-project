@@ -69,22 +69,24 @@ span.linesp {
 }
 .link_div:hover {
     background-color: $legend-color;
+    .content_link {
+        overflow: visible;
+    }
 }
 
 .content_link {
     justify-content: space-between; 
     width: 120px;
+    
     a {
         color: $kodfont-color; 
         font-family: $brand-font; 
     }
-    i {
-        font-size: 14px;
-        padding-right: 15px;
-    }
-    i.icon-links {
-        color: $span-orange;
-    }
+}
+
+.content_link.hid{
+    position: relative;
+    overflow: hidden;
 }
 
 .name-one {
@@ -102,3 +104,19 @@ span.linesp {
 .button-second {
     padding-top: 40px; 
 }
+
+.layer {
+    position: absolute;
+    transition: all, 1s linear;
+    right: 30%;
+    top: -8px;
+    i {
+        padding-right: 10px; 
+        font-size: 14px;
+    }
+    i.icon-links {
+    color: $span-orange;
+    }
+}
+
+

@@ -577,6 +577,11 @@ body {
   color: #191919;
 }
 
+i.icon-arrow-down {
+  margin-left: 9px;
+  font-size: 14px;
+}
+
 .span-name {
   color: #7296af;
   font-size: 15px;
@@ -822,6 +827,10 @@ span.linesp {
   background-color: #f3f3f1;
 }
 
+.link_div:hover .content_link {
+  overflow: visible;
+}
+
 .content_link {
   justify-content: space-between;
   width: 120px;
@@ -832,13 +841,9 @@ span.linesp {
   font-family: "Open Sans", sans-serif;
 }
 
-.content_link i {
-  font-size: 14px;
-  padding-right: 15px;
-}
-
-.content_link i.icon-links {
-  color: #fc9105;
+.content_link.hid {
+  position: relative;
+  overflow: hidden;
 }
 
 .name-one {
@@ -855,6 +860,22 @@ span.linesp {
 
 .button-second {
   padding-top: 40px;
+}
+
+.layer {
+  position: absolute;
+  transition: all, 1s linear;
+  right: 30%;
+  top: -8px;
+}
+
+.layer i {
+  padding-right: 10px;
+  font-size: 14px;
+}
+
+.layer i.icon-links {
+  color: #fc9105;
 }
 
 /*list legend*/
