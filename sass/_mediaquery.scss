@@ -1,23 +1,125 @@
 /*Media query*/
-@media(max-width: 667px){
-    .navbar {
+@media(min-width: 427px) and (max-width: 768px){
+  //navbar
+  .navbar {
+    height: auto;
+    position: static;
+  }
+   .navbar ul {
+       padding: 0;
+   }
+   .navbar li {
+       display: block;
+       text-align: center;
+       padding: 0;
+     }
+   .navbar a {
+       text-align: center;
+       text-decoration: none;
+       font-size: 25px;
+       color: $kodfont-third;
+       float: none;
+       width: 100%;
+     }
+     //chart
+     img {
+      max-width: 100%;
+      height: auto;
+    }
+}
+
+@media(max-width: 426px) {
+  [class*="col-"] {
+    padding: 12px;
+    float: none;
+  }
+  .main {
+    padding: 0 10px 10px 10px;
+    margin-left: 0;
+  }
+  //navbar
+   .navbar {
      height: auto;
      position: static;
    }
-   .navbar ul {
-     padding: 0;
-   }
-   .navbar ul li {
-     display: block;
-     text-align: center;
-     padding: 0;
-   }
-  .navbar a {
-   text-align: center;
-   text-decoration: none;
-   font-size: 25px;
-   color: $kodfont-third;
-   float: none;
-   width: 100%;
-  }
+    .navbar ul {
+        padding: 0;
+    }
+    .navbar li {
+        display: block;
+        text-align: center;
+        padding: 0;
+      }
+    .navbar a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: $kodfont-third;
+        float: none;
+        width: 100%;
+      }
+    //calendar form
+    .input-calendar {
+      border: none;
+      position: relative;
+    }
+    .input-calendar input{
+      padding: 5px 0;
+      text-align: center;
+    }
+    .cal-right {
+      border: none;
+    }
+    i.icon-calendar {
+      margin-right: 0;
+      position: absolute;
+      top: 31px;
+      left: -40px;
+    }
+    .btn-sm {
+      position: absolute;
+      top: 25px;
+      right: 1px;
+    }
+    form {
+      position: relative;
+      justify-content: space-around;
+    }
+    //line with digit
+    .col-offset-2{
+      margin-left: 0;
+    }
+    .digit {
+      display: inline-block;
+    }
+    .line {
+      margin: 0;
+    }
+    //legend & chart
+    .header5 {
+      margin: 0 0 8px 13px;
+    }
+    .legend li {
+      display: block;
+      margin: 10px 5px;
+    }
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    //line with link
+    .link_div {
+      flex-wrap: wrap;
+      justify-content: normal;
+    }
+    .layer {
+      display: none;
+    }
+    //buttons
+    .button-second {
+      padding-top: 30px;
+    }
+    .button {
+      padding-bottom: 10px;
+    }
   }

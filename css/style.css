@@ -433,46 +433,7 @@ template {
   margin-left: 91.66667%;
 }
 
-@media (max-width: 667px) {
-  .col-s-1 {
-    width: 8.33%;
-  }
-  .col-s-2 {
-    width: 16.66%;
-  }
-  .col-s-3 {
-    width: 25%;
-  }
-  .col-s-4 {
-    width: 33.33%;
-  }
-  .col-s-5 {
-    width: 41.66%;
-  }
-  .col-s-6 {
-    width: 50%;
-  }
-  .col-s-7 {
-    width: 58.33%;
-  }
-  .col-s-8 {
-    width: 66.66%;
-  }
-  .col-s-9 {
-    width: 75%;
-  }
-  .col-s-10 {
-    width: 83.33%;
-  }
-  .col-s-11 {
-    width: 91.66%;
-  }
-  .col-s-12 {
-    width: 100%;
-  }
-}
-
-@media (min-width: 668px) {
+@media (min-width: 427px) and (max-width: 768px) {
   .col-m-1 {
     width: 8.33%;
   }
@@ -507,6 +468,45 @@ template {
     width: 91.66%;
   }
   .col-m-12 {
+    width: 100%;
+  }
+}
+
+@media (max-width: 426px) {
+  .col-s-1 {
+    width: 8.33%;
+  }
+  .col-s-2 {
+    width: 16.66%;
+  }
+  .col-s-3 {
+    width: 25%;
+  }
+  .col-s-4 {
+    width: 33.33%;
+  }
+  .col-s-5 {
+    width: 41.66%;
+  }
+  .col-s-6 {
+    width: 50%;
+  }
+  .col-s-7 {
+    width: 58.33%;
+  }
+  .col-s-8 {
+    width: 66.66%;
+  }
+  .col-s-9 {
+    width: 75%;
+  }
+  .col-s-10 {
+    width: 83.33%;
+  }
+  .col-s-11 {
+    width: 91.66%;
+  }
+  .col-s-12 {
     width: 100%;
   }
 }
@@ -610,7 +610,7 @@ i.icon-arrow-down {
   color: #fff;
   font-family: "Damion", cursive;
   text-align: left;
-  font-size: 42px;
+  font-size: 38px;
   padding-bottom: 10px;
 }
 
@@ -630,14 +630,15 @@ i.icon-arrow-down {
 .side-nav a:hover {
   color: #fff;
   background-color: #191919;
+  border-left: 3px solid #f76c35;
 }
 
 .side-nav .b-close {
   position: absolute;
   top: 0;
-  right: 22px;
-  font-size: 36px;
-  margin-left: 50px;
+  right: 18px;
+  font-size: 34px;
+  margin-left: 90px;
 }
 
 .main {
@@ -645,6 +646,7 @@ i.icon-arrow-down {
   padding: 20px;
   overflow: hidden;
   width: 100%;
+  margin-left: 250px;
 }
 
 .container {
@@ -933,7 +935,7 @@ span.linesp {
 }
 
 /*Media query*/
-@media (max-width: 667px) {
+@media (min-width: 427px) and (max-width: 768px) {
   .navbar {
     height: auto;
     position: static;
@@ -941,7 +943,7 @@ span.linesp {
   .navbar ul {
     padding: 0;
   }
-  .navbar ul li {
+  .navbar li {
     display: block;
     text-align: center;
     padding: 0;
@@ -953,6 +955,100 @@ span.linesp {
     color: #000;
     float: none;
     width: 100%;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+}
+
+@media (max-width: 426px) {
+  [class*="col-"] {
+    padding: 12px;
+    float: none;
+  }
+  .main {
+    padding: 0 10px 10px 10px;
+    margin-left: 0;
+  }
+  .navbar {
+    height: auto;
+    position: static;
+  }
+  .navbar ul {
+    padding: 0;
+  }
+  .navbar li {
+    display: block;
+    text-align: center;
+    padding: 0;
+  }
+  .navbar a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    color: #000;
+    float: none;
+    width: 100%;
+  }
+  .input-calendar {
+    border: none;
+    position: relative;
+  }
+  .input-calendar input {
+    padding: 5px 0;
+    text-align: center;
+  }
+  .cal-right {
+    border: none;
+  }
+  i.icon-calendar {
+    margin-right: 0;
+    position: absolute;
+    top: 31px;
+    left: -40px;
+  }
+  .btn-sm {
+    position: absolute;
+    top: 25px;
+    right: 1px;
+  }
+  form {
+    position: relative;
+    justify-content: space-around;
+  }
+  .col-offset-2 {
+    margin-left: 0;
+  }
+  .digit {
+    display: inline-block;
+  }
+  .line {
+    margin: 0;
+  }
+  .header5 {
+    margin: 0 0 8px 13px;
+  }
+  .legend li {
+    display: block;
+    margin: 10px 5px;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  .link_div {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+  .layer {
+    display: none;
+  }
+  .button-second {
+    padding-top: 30px;
+  }
+  .button {
+    padding-bottom: 10px;
   }
 }
 
