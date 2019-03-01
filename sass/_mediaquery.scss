@@ -1,5 +1,10 @@
 /*Media query*/
 @media(min-width: 427px) and (max-width: 768px){
+  //global styles
+  .main {
+    padding: 0;
+    margin-left: 0;
+  }
   //navbar
   .navbar {
     height: auto;
@@ -21,6 +26,20 @@
        float: none;
        width: 100%;
      }
+     //input calendar
+     .input-calendar {
+       padding: 0;
+     }
+     .cal-right {
+      text-align: center;
+     }
+     //line with digit
+     .col-offset-2{
+      margin-left: 8.33%;
+    }
+    .line{
+      width: 250px;
+    }
      //chart
      img {
       max-width: 100%;
@@ -94,6 +113,7 @@
     }
     .line {
       margin: 0;
+      width: 250px;
     }
     //legend & chart
     .header5 {
@@ -121,5 +141,9 @@
     }
     .button {
       padding-bottom: 10px;
+    }
+    .undo-1 {
+      width: 35px;
+      height: 35px;
     }
   }

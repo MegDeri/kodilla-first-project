@@ -15,7 +15,7 @@ input {
 
 .input-calendar{
     border: 1px solid $kodfont-four;
-   
+    padding: 4px;
 }
 
 .calendar {
@@ -29,6 +29,7 @@ input {
 
 .cal-right {
     border-left: 0.5px solid $kodfont-four;
+    text-align: center;
 }
 i.icon-calendar {
     margin-right: 10px;

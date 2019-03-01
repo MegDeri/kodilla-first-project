@@ -692,6 +692,7 @@ input {
 
 .input-calendar {
   border: 1px solid #ccc;
+  padding: 4px;
 }
 
 .calendar {
@@ -705,6 +706,7 @@ input {
 
 .cal-right {
   border-left: 0.5px solid #ccc;
+  text-align: center;
 }
 
 i.icon-calendar {
@@ -751,7 +753,8 @@ i.icon-calendar {
 }
 
 .undo-1 {
-  width: 35px;
+  width: 40px;
+  height: 40px;
 }
 
 .undo-2 {
@@ -799,7 +802,7 @@ a {
 
 .line {
   border-bottom: 0.5px solid #b6b6b6;
-  width: 250px;
+  width: 45%;
   display: flex;
   justify-content: space-between;
   font-family: "Open Sans", sans-serif;
@@ -936,6 +939,10 @@ span.linesp {
 
 /*Media query*/
 @media (min-width: 427px) and (max-width: 768px) {
+  .main {
+    padding: 0;
+    margin-left: 0;
+  }
   .navbar {
     height: auto;
     position: static;
@@ -955,6 +962,18 @@ span.linesp {
     color: #000;
     float: none;
     width: 100%;
+  }
+  .input-calendar {
+    padding: 0;
+  }
+  .cal-right {
+    text-align: center;
+  }
+  .col-offset-2 {
+    margin-left: 8.33%;
+  }
+  .line {
+    width: 250px;
   }
   img {
     max-width: 100%;
@@ -1025,6 +1044,7 @@ span.linesp {
   }
   .line {
     margin: 0;
+    width: 250px;
   }
   .header5 {
     margin: 0 0 8px 13px;
@@ -1049,6 +1069,10 @@ span.linesp {
   }
   .button {
     padding-bottom: 10px;
+  }
+  .undo-1 {
+    width: 35px;
+    height: 35px;
   }
 }
 
