@@ -8,11 +8,12 @@
 
 [class*="col-"] {
   padding: 12px;
-  float:left;
 }
 
 .row {
     margin: 3% 0;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 * {

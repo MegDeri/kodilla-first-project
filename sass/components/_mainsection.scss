@@ -7,9 +7,10 @@ width: 100%;
 margin-left: 250px;
 }
 
-.container {
+.container-fluid {
 text-align: center;
-padding: 10px;
+padding-left: 10px;
+padding-right: 10px;
 }
 
 .main-section {
@@ -33,3 +34,8 @@ border-bottom: 2px solid $kodfont-four;
 .digit {
 padding: 0;
 }
+//chart
+img {
+    max-width: 100%;
+    height: auto;
+  }

@@ -1,5 +1,7 @@
 /*Media query*/
-@media(min-width: 427px) and (max-width: 768px){
+@media(min-width: 427px) and (max-width: 768px) {
+  @include grid('m');
+
   //global styles
   .main {
     padding: 0;
@@ -27,9 +29,6 @@
        width: 100%;
      }
      //input calendar
-     .input-calendar {
-       padding: 0;
-     }
      .cal-right {
       text-align: center;
      }
@@ -40,17 +39,13 @@
     .line{
       width: 250px;
     }
-     //chart
-     img {
-      max-width: 100%;
-      height: auto;
-    }
 }
 
 @media(max-width: 426px) {
+  @include grid('s');
+
   [class*="col-"] {
     padding: 12px;
-    float: none;
   }
   .main {
     padding: 0 10px 10px 10px;
@@ -113,7 +108,7 @@
     }
     .line {
       margin: 0;
-      width: 250px;
+      width: 280px;
     }
     //legend & chart
     .header5 {
@@ -122,10 +117,6 @@
     .legend li {
       display: block;
       margin: 10px 5px;
-    }
-    img {
-      max-width: 100%;
-      height: auto;
     }
     //line with link
     .link_div {
