@@ -6,18 +6,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Form</title>
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
-        <link href="https://fonts.googleapis.com/css?family=Damion|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Damion|Open+Sans|Roboto+Condensed" rel="stylesheet">
         <link rel="stylesheet" type="text/css" href="style.css">
         <link rel="stylesheet" type="text/css" href="icon-font/css/Glyphter.css">
 </head>
 <body>
-    <section class="main-section">
-        <h3 class="title">Personal data</h3>
-        <div class="container-fluid">
-                <form>
-                    
+    <div class="main">
+        <section class="main-section">
+            <h3 class="title">Personal data</h3>
+                <form action="" method="POST">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="fname">Name</label>
+                                    <input type="text" id="fname" placeholder="eg. Ann" minlength="3" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="lname">Surname</label>
+                                    <input type="text" id="lname" name="user-name" placeholder="eg. Smith" minlength="3" required>
+                                </div>
+                            </div>
+                       </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="email">E-mail</label>
+                                    <input type="email" id="email" name="user-email" placeholder="name.surname@" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="phone">Phone nr</label>
+                                    <input type="tel" id="phone" minlength="9" placeholder="eg. 600100100">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divide"/>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="skype">Skype</label>
+                                    <input type="text" id="skype" name="user-skype" placeholder="Skype.1">
+                                </div>
+                            </div>
+                        </div> 
+                    </div> 
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="icq">ICQ</label>
+                                    <input type="text" id="icq" name="user-icq">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="msn">Msn</label>
+                                    <input type="text" id="msn" name="user-msn">
+                                </div>
+                            </div>
+                        </div>
+                    </div>  
+                    <hr class="divide"/>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="wallet">Wallet</label>
+                                    <input type="number" id="wallet" name="user-wallet" min="100" max="10000" step="10">        
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="divide"/>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                                <div class="field">
+                                    <label for="password">Password</label>
+                                    <input type="password" id="password" name="user-pass" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div class=" col-offset-3 col-5 col-s-12 col-m-8">
+                            <div class="field">
+                                <label for="repeat">Repeat</label>
+                                <input type="password" id="repeat" name="user-pass" required>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                    <hr class="divide"/>
+                    <button type="submit">Save</button>
                 </form>
-        </div>
-    </section>
+        </section>
+    </div>
 </body>
 </html>
