@@ -2,10 +2,10 @@
 [class*="btn-"]{
     width: 80px;
     height: 40px;
-    @include border-radius(10%);
+    @include border-radius(5%);
     border: none;
     background-color: $span-orange;
-    color: $kodfont-second;
+    color: $orange-font;
     cursor: pointer;
     text-shadow: 0.7px 0.7px $title-section;
     padding: 10px;

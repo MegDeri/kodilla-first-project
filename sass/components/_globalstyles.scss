@@ -26,6 +26,13 @@ body {
     font-family: $paragraph-font;
 }
 
+.form-page {
+  margin: 0 auto;
+  background-color: $kodfont-four;
+  font-family: $body-font;
+  color: $bodyfont-color;
+}
+
 .container-fluid {
   text-align: center;
   padding-left: 10px;

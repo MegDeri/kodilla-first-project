@@ -1,0 +1,33 @@
+//Form personal data
+.divide {
+    border: 0.3px solid $kodfont-four;
+ }
+
+ .first-form {
+    text-align: center;
+ }
+
+.field {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+}
+
+.form-input {
+    height: 30px;
+    width: 70%;
+    @include border-radius(3%);
+    border: 0.5px solid $kodfont-four;
+    color: $kodfont-four;
+    font-size: 13px;
+}
+
+.form-label {
+    height: 30px;
+    line-height:30px;
+}
+
+.submit {
+  border-top: 0.5px solid $kodfont-four;
+  padding: 25px 0;
+}

@@ -1,6 +1,6 @@
 /* Nav bar*/
 .navbar {
-    line-height: 58px;
+    line-height: 62px;
     position: fixed;
     width: 100%;
     background-color: $kodfont-second;
@@ -85,7 +85,7 @@ i.icon-arrow-down {
 .side-nav a:hover {
     color: $kodfont-second;
     background-color: $nav-background;
-    border-left: 3px solid $kodfont-six;
+    border-left: 3px solid $span-orange;
 }
 
 .side-nav .b-close {

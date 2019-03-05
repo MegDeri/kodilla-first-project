@@ -39,6 +39,19 @@
     .line{
       width: 250px;
     }
+    //first personal form
+    .col-m-8 {
+      margin-left: 16.66667%;
+    }
+    .form-input {
+      height: 30px;
+      width: 250px;
+      padding: 10px;
+    }
+    .form.label {
+      height: 30px;
+      line-height:30px;
+    }
 }
 
 @media(max-width: 426px) {
@@ -95,7 +108,7 @@
       top: 25px;
       right: 1px;
     }
-    form {
+    .calendar-form {
       position: relative;
       justify-content: space-around;
     }
@@ -136,5 +149,18 @@
     .undo-1 {
       width: 35px;
       height: 35px;
+    }
+    //first personal form
+    .col-offset-3 {
+      margin-left: 0;
+    }
+    .form-input {
+      height: 30px;
+      width: 70%;
+      padding: 10px;
+    }
+    .form-label {
+      height: 30px;
+      line-height:30px;
     }
   }

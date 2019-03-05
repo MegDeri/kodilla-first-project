@@ -1,3 +1,4 @@
+@media (min-width: 769px){
 $grid-columns: 12;
 
 @for $i from 1 through 12 {
@@ -11,6 +12,7 @@ $grid-columns: 12;
       margin-left: (100% / $grid-columns) * $i;
     }
   }
+}
 
   /* Media query
   @media(min-width: 427px) and (max-width: 768px){

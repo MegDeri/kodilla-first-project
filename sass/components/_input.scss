@@ -1,16 +1,7 @@
 /*Calendar input style*/
-/*input:required {
-    border-color: rgba(255, 99 ,71, 0.6);
-    outline-color: rgb(63, 122, 51);     
-   }*/
-
-form {
+.calendar-form {
     display: flex;
     justify-content: center;
-}
-
-input {
-    border: 0;
 }
 
 .input-calendar{
@@ -25,6 +16,7 @@ input {
 .date-calendar {
    width: 150px;
    padding: 2px 5px;
+   border: 0;
 }
 
 .cal-right {
