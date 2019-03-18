@@ -39,7 +39,7 @@
         <a href="#"><i class="icon-payout"></i> Payout</a>
         <a href="#"><i class="icon-postback"></i> Postback</a>
         <hr>
-        <h4 class="title-nav">Your manager</h4>
+        <h4 class="title-nav" id="yourManager">Your manager</h4>
         <div class="overlay" id="overlay">
             <div class="modal" id="myModal">
               <div class="btn-close js--close-modal">x</div>
@@ -47,7 +47,7 @@
               <p>Lorem ipsum dolor sit amet...</p>
               <button class="js--close-modal">Okay</button>
             </div>
-          </div>
+        </div>
     </div>
     <div id="main" class="main">
         <br><br><br>
@@ -97,7 +97,9 @@
                 </div>
                 <div class="row">
                     <div class="col-12 col-s-12">
-                        <img class="chart" src="images/chart.png" alt="phone">
+                        <div class="scroll-wrapper">
+                            <canvas class="chart" id="myChart"></canvas>
+                        </div>
                     </div>
                 </div>
             </div>  
@@ -164,6 +166,9 @@
             </div>
           </section>
     </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.4.0/Chart.min.js"></script>
     <script script src="js/script.js" charset="UTF-8"></script>
+    <script script src="js/modal.js" charset="UTF-8"></script>
+    <script script src="js/charts.js" charset="UTF-8"></script>
 </body>
 </html>

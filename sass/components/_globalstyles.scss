@@ -1,4 +1,11 @@
 //Global styles
+nav:before
+nav:after{
+  content:"";
+  display: table;
+  clear: both;
+}
+
 .row:before,
 .row:after {
   content:"";
@@ -37,9 +44,4 @@ body {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  }
-
-  img {
-    max-width: 100%;
-    height: auto;
   }

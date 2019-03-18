@@ -468,6 +468,13 @@ template {
 }
 
 /* Components */
+nav:before
+nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
 .row:before,
 .row:after {
   content: "";
@@ -506,11 +513,6 @@ body {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-}
-
-img {
-  max-width: 100%;
-  height: auto;
 }
 
 /* Nav bar*/
@@ -649,6 +651,17 @@ i.icon-arrow-down {
 
 .digit {
   padding: 0;
+}
+
+.scroll-wrapper {
+  display: block;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.scroll-wrapper > .chart {
+  width: auto;
+  max-width: 100%;
 }
 
 /*Calendar input style*/
@@ -954,6 +967,7 @@ span.linesp {
   align-items: center;
   overflow: auto;
   padding: 30px;
+  display: none;
 }
 
 .overlay.show {
@@ -967,9 +981,10 @@ span.linesp {
 .modal {
   max-width: 600px;
   margin: auto;
-  background-color: #ffffff;
+  background-color: #fff;
   position: relative;
   padding: 30px;
+  display: none;
 }
 
 .modal.show {
@@ -1043,11 +1058,13 @@ span.linesp {
   }
   .navbar ul {
     padding: 0;
+    float: none;
   }
   .navbar li {
-    display: block;
     text-align: center;
     padding: 0;
+    float: none;
+    width: 100%;
   }
   .navbar a {
     text-align: center;
@@ -1142,11 +1159,13 @@ span.linesp {
   }
   .navbar ul {
     padding: 0;
+    float: none;
   }
   .navbar li {
-    display: block;
     text-align: center;
     padding: 0;
+    float: none;
+    width: 100%;
   }
   .navbar a {
     text-align: center;

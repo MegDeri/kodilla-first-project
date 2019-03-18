@@ -24,3 +24,16 @@ padding: 8px;
 .digit {
 padding: 0;
 }
+
+.scroll-wrapper {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+  }
+  
+  .scroll-wrapper > .chart {
+    width: auto;
+    max-width: 100%;
+  }
+
+

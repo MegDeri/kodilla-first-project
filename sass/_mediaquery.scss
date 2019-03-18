@@ -11,23 +11,25 @@
   .navbar {
     height: auto;
     position: static;
+      ul {
+          padding: 0;
+          float: none;
+      }
+      li {
+        text-align: center;
+        padding: 0;
+        float: none;
+        width: 100%;
+      }
+      a {
+        text-align: center;
+        text-decoration: none;
+        font-size: 25px;
+        color: $kodfont-third;
+        float: none;
+        width: 100%;
+      }
   }
-   .navbar ul {
-       padding: 0;
-   }
-   .navbar li {
-       display: block;
-       text-align: center;
-       padding: 0;
-     }
-   .navbar a {
-       text-align: center;
-       text-decoration: none;
-       font-size: 25px;
-       color: $kodfont-third;
-       float: none;
-       width: 100%;
-     }
      //input calendar
      .cal-right {
       text-align: center;
@@ -68,31 +70,33 @@
    .navbar {
      height: auto;
      position: static;
-   }
-    .navbar ul {
-        padding: 0;
+      ul {
+          padding: 0;
+          float: none;
+      }
+      li {
+          text-align: center;
+          padding: 0;
+          float: none;
+          width: 100%;
+      }
+      a {
+          text-align: center;
+          text-decoration: none;
+          font-size: 25px;
+          color: $kodfont-third;
+          float: none;
+          width: 100%;
+      }
     }
-    .navbar li {
-        display: block;
-        text-align: center;
-        padding: 0;
-      }
-    .navbar a {
-        text-align: center;
-        text-decoration: none;
-        font-size: 25px;
-        color: $kodfont-third;
-        float: none;
-        width: 100%;
-      }
     //calendar form
     .input-calendar {
       border: none;
       position: relative;
-    }
-    .input-calendar input{
-      padding: 5px 0;
-      text-align: center;
+      input {
+        padding: 5px 0;
+        text-align: center;
+      }
     }
     .cal-right {
       border: none;
