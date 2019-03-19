@@ -520,6 +520,7 @@ body {
   line-height: 62px;
   position: fixed;
   width: 100%;
+  z-index: 1;
   background-color: #fff;
 }
 
@@ -662,6 +663,11 @@ i.icon-arrow-down {
 .scroll-wrapper > .chart {
   width: auto;
   max-width: 100%;
+}
+
+canvas {
+  position: relative;
+  top: -38px;
 }
 
 /*Calendar input style*/
@@ -979,12 +985,16 @@ span.linesp {
 }
 
 .modal {
-  max-width: 600px;
+  max-width: 800px;
   margin: auto;
   background-color: #fff;
   position: relative;
   padding: 30px;
   display: none;
+  -webkit-border-radius: 3%;
+  -moz-border-radius: 3%;
+  -ms-border-radius: 3%;
+  border-radius: 3%;
 }
 
 .modal.show {
@@ -996,6 +1006,14 @@ span.linesp {
   top: 0;
   right: 0;
   padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
+
+.modal > .btn-lg {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 0 20px;
 }
 
 /*Media query*/
