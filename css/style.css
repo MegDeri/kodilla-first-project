@@ -628,6 +628,32 @@ i.icon-arrow-down {
   font-family: Arial;
 }
 
+.img-cont {
+  display: flex;
+  padding: 15px 0;
+  cursor: pointer;
+}
+
+.img-two {
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  object-fit: cover;
+  margin: 0 6% 0 3%;
+}
+
+.img-p {
+  justify-content: center;
+  align-items: center;
+  color: #ccc;
+  font-size: 18px;
+  font-family: Arial;
+}
+
 .main {
   transition: margin-left 0.5s;
   padding: 20px;
@@ -668,6 +694,10 @@ i.icon-arrow-down {
 canvas {
   position: relative;
   top: -38px;
+}
+
+.main-form {
+  padding-top: 20px;
 }
 
 /*Calendar input style*/
@@ -1272,7 +1302,7 @@ span.linesp {
 }
 
 .form-page .main-section {
-  width: 80%;
+  width: auto;
 }
 
 .form-page .title {

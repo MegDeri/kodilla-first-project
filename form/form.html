@@ -11,7 +11,51 @@
         <link rel="stylesheet" type="text/css" href="../icon-font/css/Glyphter.css">
 </head>
 <body class="form-page">
-    <div class="main">
+        <nav class="navbar">
+                <span class="open-slide" id="top-menu">
+                    <a href="#">
+                       <svg width="30" height="30">
+                           <path d="M0,5 30,5" stroke="#000" stroke-width="5"/>
+                           <path d="M0,14 30,14" stroke="#000" stroke-width="5"/>
+                           <path d="M0,23 30,23" stroke="#000" stroke-width="5"/>
+                       </svg>
+                    </a>    
+                </span>
+                <ul class="navbar-nav">
+                    <li><a href="#"><i class="icon-wallet"></i> <span class="wallet"> € 1,500.00</span><i class="icon-arrow-down"></i></a></li>
+                    <li><a href="#"><i class="icon-notification"></i></a></li>
+                    <li><a href="#"><i class="icon-profile"></i> <span class="span-name">John Smith</span></a></li>
+                    <li><a href="#"><i class="icon-quit"></i></a></li>
+                </ul>
+            </nav>
+            <div id="side-menu" class="side-nav">
+                <h1>Just do it!</h1>
+                <a href="#" class="b-close">&times;</a>
+                <a href="../index.html" class="icon-general"></i> General</a>
+                <a href="#"><i class="icon-details"></i> Details</a>
+                <a href="#"><i class="icon-links"></i> Links</a>
+                <a href="#"><i class="icon-banners"></i> Banners</a>
+                <a href="form/form.html"><i class="icon-personaldata"></i> Personal data</a>
+                <a href="#"><i class="icon-payout"></i> Payout</a>
+                <a href="#"><i class="icon-postback"></i> Postback</a>
+                <hr>
+                <h4 class="title-nav">Your manager</h4>
+                <div class="img-cont" id="yourManager">
+                    <img class="img-two" src="https://images.pexels.com/photos/247917/pexels-photo-247917.jpeg" alt="gross">
+                    <p class="img-p">Michael P.</p>
+                </div>
+                <div class="overlay" id="overlay">
+                    <div class="modal" id="myModal">
+                      <div class="btn-close js--close-modal">x</div>
+                      <h4>Hello!</h4>
+                      <p>type message below...</p>
+                      <textarea placeholder="message..."></textarea>
+                      <button class="js--close-modal btn-lg">Okay</button>
+                    </div>
+                </div>
+            </div>
+            <br><br><br>
+    <div class="main main-form">
         <section class="main-section">
             <h3 class="title">Personal data</h3>
                 <form class="first-form" action="" method="POST">
@@ -124,5 +168,7 @@
                 </form>
         </section>
     </div>
+    <script src="../js/script.js" charset="UTF-8"></script>
+    <script src="../js/modal.js" charset="UTF-8"></script>
 </body>
 </html>

@@ -104,3 +104,26 @@ i.icon-arrow-down {
     padding-top: 20px;
     font-family: $paragraph-font;
 }
+//last link to manager
+.img-cont{
+    display: flex;
+    padding: 15px 0;
+    cursor: pointer;
+}
+
+.img-two {
+    @include border-radius(50%);
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    object-fit: cover;
+    margin: 0 6% 0 3%;
+}
+
+.img-p {
+    justify-content: center;
+    align-items: center;
+    color: $kodfont-four;
+    font-size: 18px;
+    font-family: $paragraph-font;
+}
