@@ -1,6 +1,6 @@
 //Global styles
 nav:before
-nav:after{
+nav:after {
   content:"";
   display: table;
   clear: both;
@@ -18,19 +18,19 @@ nav:after{
 }
 
 .row {
-    margin: 3% 0;
-    display: flex;
-    flex-wrap: wrap;
+  margin: 3% 0;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 * {
-    box-sizing: border-box;    
+  box-sizing: border-box;    
 }
 
 body {
-    margin: 0 auto;
-    background-color: $kodfont-four;
-    font-family: $paragraph-font;
+  margin: 0 auto;
+  background-color: $kodfont-four;
+  font-family: $paragraph-font;
 }
 
 .form-page {
@@ -44,4 +44,4 @@ body {
   text-align: center;
   padding-left: 10px;
   padding-right: 10px;
-  }
+}

@@ -2,7 +2,7 @@
 @import "mixins";
 @import "normalize";
 @import "layout";
-/* Components */
+//Components 
 @import "components/globalstyles";
 @import "components/navbars";
 @import "components/mainsection";
@@ -13,11 +13,6 @@
 @import "components/form";
 @import "components/modals";
 @import "mediaquery";
-
-
-
-//@import "sections/generalsection"//
-
+//@import "sections/generalsection";
 @import "pages/form-page";
-
-//@import "pages/registration";//s
+//@import "pages/registration";

@@ -1,123 +1,119 @@
 //Text and headers style
 h1, h2, h3, h4, h5, h6 {
-    padding: 0;
-    margin: 0;
-    }
+  padding: 0;
+  margin: 0;
+}
     
-    h1 {
-    font-family: $h1-font;
-    color: $h1-color;
-    }
-    
-    h2, h3 {
-    font-family: $brand-font;
-    color: $h2h3-color;
-    }
-    h4 {
-    font-family: $brand-font;
-    color: $h4-color;
-    }
-    
-    h5, h6 {
-    font-family: $paragraph-font;
-    }
-    
-    p {
-    font-family: $paragraph-font; 
-    }
-    
-    a {
-    text-decoration: none;
-    color: $paragraph-color;
-    font-family: $paragraph-font; 
-    }
+h1 {
+  font-family: $h1-font;
+  color: $h1-color;
+}
 
+h2, h3 {
+  font-family: $brand-font;
+  color: $h2h3-color;
+}
+h4 {
+  font-family: $brand-font;
+  color: $h4-color;
+}
+
+h5, h6 {
+  font-family: $paragraph-font;
+}
+
+p {
+  font-family: $paragraph-font; 
+}
+
+a {
+  text-decoration: none;
+  color: $paragraph-color;
+  font-family: $paragraph-font; 
+}
 
 //Line with digit
 .digit {
-    display: flex;
-    justify-content: space-between;  
-    }
+  display: flex;
+  justify-content: space-between;  
+}
     
 .line {
-    border-bottom: 0.5px solid $h1-color;
-    width: 45%;
-    display: flex;
-    justify-content: space-between;
-    font-family: $brand-font;
-    color: $h2h3-color;
-    padding: 5px 0;
+  border-bottom: .5px solid $h1-color;
+  width: 45%;
+  display: flex;
+  justify-content: space-between;
+  font-family: $brand-font;
+  color: $h2h3-color;
+  padding: 5px 0;
 }
 
 span.linesp {
-    color: $kodfont-third;
+  color: $kodfont-third;
 }
 
 .line_dig {
-    margin: 1% 0 0 0;
+  margin: 1% 0 0 0;
 }
-//Line with links
 
+//Line with links
 .link_div {
-    display: flex;
-    justify-content: space-between;  
-    border-bottom: 0.5px solid $h1-color; 
-    align-items: center;
-    font-family: $brand-font;
-    color: $h2h3-color;
-    padding: 20px 0;
+  display: flex;
+  justify-content: space-between;  
+  border-bottom: .5px solid $h1-color; 
+  align-items: center;
+  font-family: $brand-font;
+  color: $h2h3-color;
+  padding: 20px 0;
 }
 .link_div:hover {
-    background-color: $legend-color;
-    .content_link {
-        overflow: visible;
-    }
+  background-color: $legend-color;
+  .content_link {
+    overflow: visible;
+  }
 }
 
 .content_link {
-    justify-content: space-between; 
-    width: 120px;
-    
-    a {
-        color: $kodfont-color; 
-        font-family: $brand-font; 
-    }
+  justify-content: space-between; 
+  width: 120px;
+  a {
+    color: $kodfont-color; 
+    font-family: $brand-font; 
+  }
 }
 
-.content_link.hid{
-    position: relative;
-    overflow: hidden;
+.content_link.hid {
+  position: relative;
+  overflow: hidden;
 }
 
 .name-one {
-    text-align: left;
+  text-align: left;
 }
 
 .top-border {
-    border-top: 0.5px solid $h1-color; 
+  border-top: .5px solid $h1-color; 
 }
 
 .button {
-    padding-bottom: 20px;
+  padding-bottom: 20px;
 }
 
 .button-second {
-    padding-top: 30px;
-    padding-bottom: 20px; 
+  padding-top: 30px;
+  padding-bottom: 20px; 
 }
 
 .layer {
-    position: absolute;
-    transition: all, 1s linear;
-    right: 30%;
-    top: -8px;
-    i {
-        padding-right: 10px; 
-        font-size: 14px;
-    }
-    i.icon-links {
+  position: absolute;
+  transition: all, 1s linear;
+  right: 30%;
+  top: -8px;
+  i {
+    padding-right: 10px; 
+    font-size: 14px;
+  } 
+  i.icon-links {
     color: $span-orange;
-    }
+  }
 }
-
-

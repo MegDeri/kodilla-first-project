@@ -1,44 +1,44 @@
-/*Button's style*/
-[class*="btn-"]{
-    width: 80px;
-    height: 40px;
-    @include border-radius(5%);
-    border: none;
-    background-color: $span-orange;
-    color: $orange-font;
-    cursor: pointer;
-    text-shadow: 0.7px 0.7px $title-section;
-    padding: 10px;
-    margin-left: 10px;
-    }
+//Button's style
+[class*="btn-"] {
+  width: 80px;
+  height: 40px;
+  @include border-radius(5%);
+  border: none;
+  background-color: $span-orange;
+  color: $orange-font;
+  cursor: pointer;
+  text-shadow: .7px .7px $title-section;
+  padding: 10px;
+  margin-left: 10px;
+}
     
-    .btn-lg {
-    width: 120px;
-    height: 38px;
-    font-size: 16px;
-    }
-    
-    .btn-sm {
-    width: 70px;
-    height: 30px;
-    font-size: 12px;
-    }
-    
-    .btn-gray {
-    background-color: $title-section;
-    text-shadow: 0.7px 0.7px $shadow-color;
-    }
-    
-    [class*="undo-"] {
-    text-shadow: 0.7px 0.7px $shadow-color;
-    width: 50px;
-    }
-    
-    .undo-1 {
-    width: 40px;
-    height: 40px;
-    }
-    
-    .undo-2 {
-    width: 45px; 
-    }
+.btn-lg {
+  width: 120px;
+  height: 38px;
+  font-size: 16px;
+}
+
+.btn-sm {
+  width: 70px;
+  height: 30px;
+  font-size: 12px;
+}
+
+.btn-gray {
+  background-color: $title-section;
+  text-shadow: .7px .7px $shadow-color;
+}
+
+[class*="undo-"] {
+  text-shadow: .7px .7px $shadow-color;
+  width: 50px;
+}
+
+.undo-1 {
+  width: 40px;
+  height: 40px;
+}
+
+.undo-2 {
+  width: 45px; 
+}

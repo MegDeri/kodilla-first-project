@@ -1,129 +1,129 @@
-/* Nav bar*/
+//Nav bar
 .navbar {
-    line-height: 62px;
-    position: fixed;
-    width: 100%;
-    z-index: 1;
-    background-color: $kodfont-second;
-        ul {
-            margin: 0;
-            list-style-type: none;
-            text-align: right;
-            float: right;
-        }
-        li {
-            display: block;
-            float: left;
-        }
-        a {
-            text-align: center;
-            text-decoration: none;
-            font-size: 20px;
-            color: $h1-color;
-            float: left;
-            display: block;
-            border-left: 0.9px solid $h1-color;
-            padding: 2px 12px 0 12px;
-        }
-        i {
-            font-size: 16px;
-            padding: 6px;
-        }
+  line-height: 62px;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+  background-color: $kodfont-second;
+  ul {
+    margin: 0;
+    list-style-type: none;
+    text-align: right;
+    float: right;
+  }
+  li {
+    display: block;
+    float: left;
+  }
+  a {
+    text-align: center;
+    text-decoration: none;
+    font-size: 20px;
+    color: $h1-color;
+    float: left;
+    display: block;
+    border-left: .9px solid $h1-color;
+    padding: 2px 12px 0 12px;
+  }
+  i {
+    font-size: 16px;
+    padding: 6px;
+  }
 }
 
 .wallet {
-    color: $nav-background;  
+  color: $nav-background;  
 }
 
 i.icon-arrow-down {
-    margin-left: 9px;
-    font-size: 14px;
+  margin-left: 9px;
+  font-size: 14px;
 }
 
 .span-name {
-    color: $kodfont-color;
-    font-size: 15px;
+  color: $kodfont-color;
+  font-size: 15px;
 }
 
 .navbar a:hover {
-    background-color: $kodfont-five;
-    color: $nav-background;
+  background-color: $kodfont-five;
+  color: $nav-background;
 }
 
 //Side bar
 .side-nav {
-        height: 100%;
-        width: 0;
-        position: fixed;
-        z-index: 1;
-        top: 0;
-        left: 0;
-        background-color: $kodfont-third;
-        opacity: 0.9;
-        overflow-x: hidden;
-        padding-top: 20px;
-        transition: 0.5s;
-        h1 {
-            color: $kodfont-second;
-            font-family: $h1-font;
-            text-align: left;
-            font-size: 38px;
-            padding-bottom: 10px;
-        }
-        a {
-            padding: 20px 20px 20px 2px;
-            text-decoration: none;
-            font-size: 18px;
-            color: $kodfont-four;
-            display: block;
-            transition: 0.3s;
-        }
-        i {
-            padding-right: 6px;
-        }
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: $kodfont-third;
+  opacity: .9;
+  overflow-x: hidden;
+  padding-top: 20px;
+  transition: .5s;
+  h1 {
+    color: $kodfont-second;
+    font-family: $h1-font;
+    text-align: left;
+    font-size: 38px;
+    padding-bottom: 10px;
+  }
+  a {
+    padding: 20px 20px 20px 2px;
+    text-decoration: none;
+    font-size: 18px;
+    color: $kodfont-four;
+    display: block;
+    transition: .3s;
+  }
+  i {
+    padding-right: 6px;
+  }
 }
 
 .side-nav a:hover {
-    color: $kodfont-second;
-    background-color: $nav-background;
-    border-left: 3px solid $span-orange;
+  color: $kodfont-second;
+  background-color: $nav-background;
+  border-left: 3px solid $span-orange;
 }
 
 .side-nav .b-close {
-    position: absolute;
-    top: 0;
-    right: 18px;
-    font-size: 34px;
-    margin-left: 90px;
+  position: absolute;
+  top: 0;
+  right: 18px;
+  font-size: 34px;
+  margin-left: 90px;
 }
 
 .title-nav {
-    color: $h1-color;
-    text-transform: uppercase;
-    padding-left: 20px;
-    padding-top: 20px;
-    font-family: $paragraph-font;
+  color: $h1-color;
+  text-transform: uppercase;
+  padding-left: 20px;
+  padding-top: 20px;
+  font-family: $paragraph-font;
 }
 //last link to manager
-.img-cont{
-    display: flex;
-    padding: 15px 0;
-    cursor: pointer;
+.img-cont {
+  display: flex;
+  padding: 15px 0;
+  cursor: pointer;
 }
 
 .img-two {
-    @include border-radius(50%);
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    object-fit: cover;
-    margin: 0 6% 0 3%;
+  @include border-radius(50%);
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  object-fit: cover;
+  margin: 0 6% 0 3%;
 }
 
 .img-p {
-    justify-content: center;
-    align-items: center;
-    color: $kodfont-four;
-    font-size: 18px;
-    font-family: $paragraph-font;
+  justify-content: center;
+  align-items: center;
+  color: $kodfont-four;
+  font-size: 18px;
+  font-family: $paragraph-font;
 }

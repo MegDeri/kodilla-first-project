@@ -1,28 +1,21 @@
 @media (min-width: 769px){
 $grid-columns: 12;
-
-@for $i from 1 through 12 {
+  @for $i from 1 through 12 {
     .col-#{$i} {
       width: (100% / $grid-columns) * $i;
     }
   }
-  
   @for $i from 0 through 11 {
     .col-offset-#{$i} {
       margin-left: (100% / $grid-columns) * $i;
     }
   }
 }
-
-  /* Media query
-  @media(min-width: 427px) and (max-width: 768px){
-     For tablets:
-  }*/
   
-  @media (max-width: 426px) {
-    // For cell phones: 
-   //grid for media query
-   @for $i from 1 through 12 {
+@media (max-width: 426px) {
+  // For cell phones: 
+  //grid for media query
+  @for $i from 1 through 12 {
     .col-s-#{$i} {
       $width: 100% / 12 * $i;
       flex: 0 0 $width;
@@ -31,5 +24,3 @@ $grid-columns: 12;
   }
 }
   
-
-

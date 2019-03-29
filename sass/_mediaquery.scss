@@ -1,7 +1,6 @@
-/*Media query*/
+//Media query
 @media(min-width: 427px) and (max-width: 768px) {
   @include grid('m');
-
   //global styles
   .main {
     padding: 0;
@@ -11,54 +10,53 @@
   .navbar {
     height: auto;
     position: static;
-      ul {
-          padding: 0;
-          float: none;
-      }
-      li {
-        text-align: center;
-        padding: 0;
-        float: none;
-        width: 100%;
-      }
-      a {
-        text-align: center;
-        text-decoration: none;
-        font-size: 25px;
-        color: $kodfont-third;
-        float: none;
-        width: 100%;
-      }
-  }
-     //input calendar
-     .cal-right {
+    ul {
+      padding: 0;
+      float: none;
+    }
+    li {
       text-align: center;
-     }
-     //line with digit
-     .col-offset-2{
-      margin-left: 8.33%;
+      padding: 0;
+      float: none;
+      width: 100%;
     }
-    .line{
-      width: 250px;
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-size: 25px;
+      color: $kodfont-third;
+      float: none;
+      width: 100%;
     }
-    //first personal form
-    .col-m-8 {
-      margin-left: 16.66667%;
-    }
-    .form-input {
-      height: 30px;
-      width: 250px;
-      padding: 10px;
-    }
-    .form.label {
-      height: 30px;
-      line-height:30px;
-    }
+  }
+  //input calendar
+  .cal-right {
+    text-align: center;
+  }
+  //line with digit
+  .col-offset-2 {
+    margin-left: 8.33%;
+  }
+  .line {
+    width: 250px;
+  }
+  //first personal form
+  .col-m-8 {
+    margin-left: 16.66667%;
+  }
+  .form-input {
+    height: 30px;
+    width: 250px;
+    padding: 10px;
+  }
+  .form.label {
+    height: 30px;
+    line-height:30px;
+  }
 }
 
 @media(max-width: 426px) {
   @include grid('s');
-
   [class*="col-"] {
     padding: 12px;
   }
@@ -67,104 +65,101 @@
     margin-left: 0;
   }
   //navbar
-   .navbar {
-     height: auto;
-     position: static;
-      ul {
-          padding: 0;
-          float: none;
-      }
-      li {
-          text-align: center;
-          padding: 0;
-          float: none;
-          width: 100%;
-      }
-      a {
-          text-align: center;
-          text-decoration: none;
-          font-size: 25px;
-          color: $kodfont-third;
-          float: none;
-          width: 100%;
-      }
+  .navbar {
+    height: auto;
+    position: static;
+    ul {
+      padding: 0;
+      float: none;
     }
-    //calendar form
-    .input-calendar {
-      border: none;
-      position: relative;
-      input {
-        padding: 5px 0;
-        text-align: center;
-      }
+    li {
+      text-align: center;
+      padding: 0;
+      float: none;
+      width: 100%;
     }
-    .cal-right {
-      border: none;
-    }
-    i.icon-calendar {
-      margin-right: 0;
-      position: absolute;
-      top: 31px;
-      left: -40px;
-    }
-    .btn-sm {
-      position: absolute;
-      top: 25px;
-      right: 1px;
-    }
-    .calendar-form {
-      position: relative;
-      justify-content: space-around;
-    }
-    //line with digit
-    .col-offset-2{
-      margin-left: 0;
-    }
-    .digit {
-      display: inline-block;
-    }
-    .line {
-      margin: 0;
-      width: 280px;
-    }
-    //legend & chart
-    .header5 {
-      margin: 0 0 8px 13px;
-    }
-    .legend li {
-      display: block;
-      margin: 10px 5px;
-    }
-    //line with link
-    .link_div {
-      flex-wrap: wrap;
-      justify-content: normal;
-    }
-    .layer {
-      display: none;
-    }
-    //buttons
-    .button-second {
-      padding-top: 30px;
-    }
-    .button {
-      padding-bottom: 10px;
-    }
-    .undo-1 {
-      width: 35px;
-      height: 35px;
-    }
-    //first personal form
-    .col-offset-3 {
-      margin-left: 0;
-    }
-    .form-input {
-      height: 30px;
-      width: 70%;
-      padding: 10px;
-    }
-    .form-label {
-      height: 30px;
-      line-height:30px;
+    a {
+      text-align: center;
+      text-decoration: none;
+      font-size: 25px;
+      color: $kodfont-third;
+      float: none;
+      width: 100%;
     }
   }
+  //calendar form
+  .input-calendar {
+    border: none;
+    position: relative;
+    input {
+      padding: 5px 0;
+      text-align: center;
+    }
+  }
+  .cal-right {
+    border: none;
+  }
+  i.icon-calendar {
+    margin-right: 0;
+    position: absolute;
+    top: 31px;
+    left: 20px;
+  }
+  .btn-sm {
+    position: absolute;
+    top: 25px;
+    right: 1px;
+  }
+  .calendar-form {
+    position: relative;
+    justify-content: space-around;
+  }
+  //line with digit
+  .col-offset-2 {
+    margin-left: 0;
+  }
+  .digit {
+    display: inline-block;
+  }
+  .line {
+    margin: 0;
+    width: 280px;
+  }
+  //legend & chart
+  .header5 {
+    margin: 0 0 8px 13px;
+  }
+  .legend li {
+    display: block;
+    margin: 10px 5px;
+  }
+  //line with link
+  .link_div {
+    flex-wrap: wrap;
+    justify-content: normal;
+  }
+  .layer {
+    display: none;
+  }
+  //buttons
+  .button-second {
+    padding-top: 30px;
+  }
+  .undo-1 {
+    width: 35px;
+    height: 35px;
+  }
+  //first personal form
+  .col-offset-3 {
+    margin-left: 0;
+  }
+  .form-input {
+    height: 30px;
+    width: 70%;
+    padding: 10px;
+  }
+  .form-label {
+    height: 30px;
+    line-height:30px;
+  }
+}

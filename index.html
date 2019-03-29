@@ -6,8 +6,8 @@
     <title>Responsive first project</title>
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Damion|Open+Sans|Roboto+Condensed">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
     <link rel="stylesheet" type="text/css" href="icon-font/css/Glyphter.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
 </head>
 <body>
     <nav class="navbar">
@@ -59,9 +59,9 @@
             <h3 class="title">General statistic</h3>
             <div class="container-fluid">    
                 <div class="row calendar">
-                    <div class="col-12 col-m-8">
+                    <div class="col-12 col-m-8 col-s-11">
                         <form class="calendar-form">
-                            <div class="input-calendar col-s-6">
+                            <div class="input-calendar">
                                 <input type="date" class="date-calendar" id="calendar" required>
                                 <input type="date" class="date-calendar cal-right" id="calendartwo" required>
                                 <i class="icon-calendar"></i>
@@ -112,7 +112,11 @@
             <h3 class="title">Links</h3>
             <div class="container-fluid">
                 <div class="row">
-                    <div class="button col-12 col-m-8 col-s-12"><button class="btn-lg"> + Add new</button> </div>
+                    <div class="col-12 col-m-8 col-s-12">
+                        <button class="btn-lg"> + Add new</button>
+                    </div>
+                </div>
+                <div class="row">
                     <div class="col-8 col-offset-2 col-m-10 col-s-12">
                         <div class="link_div top-border">
                             <div class="content_link name-one">Home page</div>
@@ -164,7 +168,9 @@
                             <div class="content_link"><a href="#">www.twitter.com</a></div>
                             <div class="content_link hid"><div class="layer"><i class="icon-links"></i><i class="icon-trash"></i></div></div>
                         </div>
-                        <div class="button-second"><button class="btn-lg"> + Add new</button> </div>                      
+                        <div class="button-second">
+                            <button class="btn-lg"> + Add new</button>
+                        </div>                      
                     </div>
                 </div>
             </div>
@@ -175,4 +181,3 @@
     <script src="js/modal.js" charset="UTF-8"></script>
     <script src="js/charts.js" charset="UTF-8"></script>
 </body>
-</html>

@@ -14,38 +14,38 @@
 }
 
 .overlay.show {
-    display: flex;
-  }
+  display: flex;
+}
 
-  .overlay::webkit-scrollbar {
-    display: none;
-  }
+.overlay::webkit-scrollbar {
+  display: none;
+}
 
-  .modal {
-    max-width: 800px;
-    margin: auto;
-    background-color: $kodfont-second;
-    position: relative;
-    padding: 30px;
-    display: none;
-    @include border-radius(3%);
-  }
+.modal {
+  max-width: 800px;
+  margin: auto;
+  background-color: $kodfont-second;
+  position: relative;
+  padding: 30px;
+  display: none;
+  @include border-radius(3%);
+}
 
-  .modal.show {
-    display: block;
-  }
+.modal.show {
+  display: block;
+}
 
-  .modal .btn-close {
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 5px 10px;
-    text-align: center;
-    font-size: 20px;
-  }
+.modal .btn-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 5px 10px;
+  text-align: center;
+  font-size: 20px;
+}
 
-  .modal > .btn-lg {
-    display: flex;
-    justify-content: center;
-    margin: 20px 20px 0 20px;
-  }
+.modal > .btn-lg {
+  display: flex;
+  justify-content: center;
+  margin: 20px 20px 0 20px;
+}
