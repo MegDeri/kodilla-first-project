@@ -7,16 +7,16 @@
 .input-calendar {
   border: 1px solid $kodfont-four;
   padding: 4px;
+  position: relative;
+  position: relative;
+  z-index: 1;
 }
 
-.calendar {
-  text-align: center;
-}
-   
 .date-calendar {
   width: 150px;
   padding: 2px 5px;
   border: 0;
+  background-color: rgba(252, 252, 252, 0.4);
 }
 
 .cal-right {
@@ -25,5 +25,8 @@
 }
 
 i.icon-calendar {
-  margin-right: 10px;
+  position: absolute;
+  top: 10px;
+  left: 290px;
+  z-index: -1;
 }

@@ -55,7 +55,7 @@ i.icon-arrow-down {
   height: 100%;
   width: 0;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
   top: 0;
   left: 0;
   background-color: $kodfont-third;
@@ -68,10 +68,10 @@ i.icon-arrow-down {
     font-family: $h1-font;
     text-align: left;
     font-size: 38px;
-    padding-bottom: 10px;
+    padding: 0 0 10px 10px;
   }
   a {
-    padding: 20px 20px 20px 2px;
+    padding: 20px 20px 20px 10px;
     text-decoration: none;
     font-size: 18px;
     color: $kodfont-four;
