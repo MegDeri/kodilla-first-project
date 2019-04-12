@@ -1101,26 +1101,10 @@ textarea {
     margin-left: 0;
   }
   .navbar {
-    height: auto;
-    position: static;
+    height: 50px;
   }
   .navbar ul {
-    padding: 0;
-    float: none;
-  }
-  .navbar li {
-    text-align: center;
-    padding: 0;
-    float: none;
-    width: 100%;
-  }
-  .navbar a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000;
-    float: none;
-    width: 100%;
+    display: none;
   }
   .side-nav a {
     padding: 20px;
@@ -1208,26 +1192,10 @@ textarea {
     margin-left: 0;
   }
   .navbar {
-    height: auto;
-    position: static;
+    height: 50px;
   }
   .navbar ul {
-    padding: 0;
-    float: none;
-  }
-  .navbar li {
-    text-align: center;
-    padding: 0;
-    float: none;
-    width: 100%;
-  }
-  .navbar a {
-    text-align: center;
-    text-decoration: none;
-    font-size: 25px;
-    color: #000;
-    float: none;
-    width: 100%;
+    display: none;
   }
   .side-nav a {
     padding: 20px;

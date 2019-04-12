@@ -8,25 +8,9 @@
   }
   //navbar
   .navbar {
-    height: auto;
-    position: static;
+    height: 50px;
     ul {
-      padding: 0;
-      float: none;
-    }
-    li {
-      text-align: center;
-      padding: 0;
-      float: none;
-      width: 100%;
-    }
-    a {
-      text-align: center;
-      text-decoration: none;
-      font-size: 25px;
-      color: $kodfont-third;
-      float: none;
-      width: 100%;
+      display: none;
     }
   }
   //side bar
@@ -75,25 +59,9 @@
   }
   //navbar
   .navbar {
-    height: auto;
-    position: static;
+    height: 50px;
     ul {
-      padding: 0;
-      float: none;
-    }
-    li {
-      text-align: center;
-      padding: 0;
-      float: none;
-      width: 100%;
-    }
-    a {
-      text-align: center;
-      text-decoration: none;
-      font-size: 25px;
-      color: $kodfont-third;
-      float: none;
-      width: 100%;
+      display: none;
     }
   }
   //side bar
