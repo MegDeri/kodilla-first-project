@@ -66,12 +66,6 @@ span.linesp {
   color: $h2h3-color;
   padding: 20px 0;
 }
-.link_div:hover {
-  background-color: $legend-color;
-  .content_link {
-    overflow: visible;
-  }
-}
 
 .content_link {
   justify-content: space-between; 

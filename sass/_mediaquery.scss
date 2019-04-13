@@ -1,4 +1,22 @@
 //Media query
+@media all and (min-width: 769px) {
+  .side-nav a:hover {
+    color: $kodfont-second;
+    background-color: $nav-background;
+    border-left: 3px solid $span-orange;
+  }
+  .navbar a:hover {
+    background-color: $kodfont-five;
+    color: $nav-background;
+  }
+  .link_div:hover {
+    background-color: $legend-color;
+    .content_link {
+      overflow: visible;
+    }
+  }
+}
+
 @media(min-width: 427px) and (max-width: 768px) {
   @include grid('m');
   //global styles
@@ -7,14 +25,61 @@
     margin-left: 0;
   }
   //navbar
-  .navbar {
-    height: 50px;
-    ul {
-      display: none;
+  .wrapped {
+    height:144px;
+    opacity: .9;
+    background-color: $paragraph-color;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    .navbar {
+      position: static;
+      line-height: 0;
+      background-color: inherit;
+      ul {
+        text-align: center;
+        float: none;
+        padding-inline-start: 0;
+        padding-top: 10px;
+        li {
+          display: list-item;
+          float: none;
+          padding: 10px 0;
+          a {
+            float: none; 
+            display: inline;
+            border-left: none;
+            padding: 7px 0;
+            color: $kodfont-four;
+          }
+        }
+      }
     }
+  }
+  .span-name {
+    color: $kodfont-four;
+    font-size: 15px;
+    overflow-wrap: break-word;
+}
+  .main-section {
+    position: relative;
+  }
+  .open-slide > a {
+    border-left: none;
+    position: absolute;
+    top: 5px;
+    right: -80px;
+}
+  .wallet {
+    color: $kodfont-four;
+    overflow-wrap: break-word;
   }
   //side bar
   .side-nav {
+    top: 154px;
     a {
       padding: 20px;
     }
@@ -46,6 +111,9 @@
     height: 30px;
     line-height:30px;
   }
+  .content_link.hid {
+    overflow: visible;
+  }
 }
 
 @media(max-width: 426px) {
@@ -58,14 +126,61 @@
     margin-left: 0;
   }
   //navbar
-  .navbar {
-    height: 50px;
-    ul {
-      display: none;
+  .wrapped {
+    height:144px;
+    opacity: .9;
+    background-color: $paragraph-color;
+    width: 0;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    transition: .5s;
+    .navbar {
+      position: static;
+      line-height: 0;
+      background-color: inherit;
+      ul {
+        text-align: center;
+        float: none;
+        padding-inline-start: 0;
+        padding-top: 10px;
+        li {
+          display: list-item;
+          float: none;
+          padding: 10px 0;
+          a {
+            float: none; 
+            display: inline;
+            border-left: none;
+            padding: 7px 0;
+            color: $kodfont-four;
+          }
+        }
+      }
     }
+  }
+  .span-name {
+    color: $kodfont-four;
+    font-size: 15px;
+    overflow-wrap: break-word;
+}
+  .main-section {
+    position: relative;
+  }
+  .open-slide > a {
+    border-left: none;
+    position: absolute;
+    top: 5px;
+    right: -80px;
+}
+  .wallet {
+    color: $kodfont-four;
+    overflow-wrap: break-word;
   }
   //side bar
   .side-nav {
+    top: 154px;
     a {
       padding: 20px;
     }
